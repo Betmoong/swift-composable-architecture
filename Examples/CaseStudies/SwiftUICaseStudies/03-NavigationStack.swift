@@ -2,7 +2,7 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This screen demonstrates how to use `NavigationStack` with Composable Architecture applications.
+  이 화면은 Composable Architecture 애플리케이션에서 NavigationStack을 사용하는 방법을 보여줍니다.
   """
 
 @Reducer
@@ -239,10 +239,9 @@ struct ScreenAView: View {
     Form {
       Text(
         """
-        This screen demonstrates a basic feature hosted in a navigation stack.
+        이 화면은 내비게이션 스택에서 호스팅되는 기본 기능을 보여줍니다.
 
-        You can also have the child feature dismiss itself, which will communicate back to the \
-        root stack view to pop the feature off the stack.
+        또한 child feature가 스스로를 종료하도록 할 수 있으며, 이는 root stack view에게 stack에서 해당 feature를 제거하도록 통신합니다.
         """
       )
 
@@ -340,9 +339,7 @@ struct ScreenBView: View {
       Section {
         Text(
           """
-          This screen demonstrates how to navigate to other screens without needing to compile \
-          any symbols from those screens. You can send an action into the system, and allow the \
-          root feature to intercept that action and push the next feature onto the stack.
+          이 화면은 다른 화면의 심볼을 컴파일할 필요 없이 다른 화면으로 네비게이션하는 방법을 보여줍니다. 시스템에 액션을 보내고, 루트 기능이 그 액션을 가로채 다음 기능을 스택에 푸시할 수 있습니다.
           """
         )
       }
@@ -411,8 +408,7 @@ struct ScreenCView: View {
     Form {
       Text(
         """
-        This screen demonstrates that if you start a long-living effects in a stack, then it \
-        will automatically be torn down when the screen is dismissed.
+        이 화면은 스택에서 long-living 효과를 시작하면, 화면이 닫힐 때 자동으로 해당 효과가 종료된다는 것을 보여줍니다.
         """
       )
       Section {

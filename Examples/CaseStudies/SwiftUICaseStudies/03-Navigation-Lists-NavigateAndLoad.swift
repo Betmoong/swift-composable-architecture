@@ -2,10 +2,10 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This screen demonstrates navigation that depends on loading optional state from a list element.
+  이 화면은 목록 요소에서 선택적 상태를 로드하는 데 따른 내비게이션을 보여줍니다.
 
-  Tapping a row simultaneously navigates to a screen that depends on its associated counter state \
-  and fires off an effect that will load this state a second later.
+  행을 탭하면 해당 카운터 상태에 따라 의존하는 화면으로 동시에 내비게이션하고, \
+  1초 후에 이 상태를 로드할 효과를 발생시킵니다.
   """
 
 @Reducer

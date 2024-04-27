@@ -2,11 +2,10 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This screen demonstrates navigation that depends on loading optional data into state.
+  이 화면은 상태에 선택적 데이터를 로드하는 것에 따른 내비게이션을 보여줍니다.
 
-  Tapping "Load optional counter" fires off an effect that will load the counter state a second \
-  later. When the counter state is present, you will be programmatically presented a sheet that \
-  depends on this data.
+  "Load optional counter"를 탭하면 1초 후에 카운터 상태를 로드할 효과가 발동됩니다. \
+  카운터 상태가 존재하면, 이 데이터에 의존하는 시트가 프로그래밍적으로 표시됩니다.
   """
 
 @Reducer

@@ -2,8 +2,7 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This screen demonstrates driving 3 kinds of navigation (drill down, sheet, popover) from a single
-  piece of enum state.
+  이 화면은 단일 enum state에서 세 가지 종류의 내비게이션(drill down, sheet, popover)을 구동하는 방법을 보여줍니다.
   """
 
 @Reducer
