@@ -120,12 +120,9 @@ struct ProfileTabView: View {
     Form {
       Text(
         template: """
-          This tab shows state from the previous tab, and it is capable of resetting all of the \
-          state back to 0.
+          이 탭은 이전 탭의 상태를 보여주며, 모든 상태를 0으로 재설정할 수 있습니다.
 
-          This shows that it is possible for each screen to model its state in the way that makes \
-          the most sense for it, while still allowing the state and mutations to be shared \
-          across independent screens.
+          이는 각 화면이 가장 의미 있는 방식으로 자신의 상태를 모델링할 수 있으면서도, 독립적인 화면 간에 상태와 변화를 공유할 수 있음을 보여줍니다.
           """,
         .caption
       )
