@@ -2,16 +2,11 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This application demonstrates how to handle long-living effects, for example notifications from \
-  Notification Center, and how to tie an effect's lifetime to the lifetime of the view.
+  이 애플리케이션은 장기 지속 효과를 처리하는 방법을 보여줍니다. 예를 들어, Notification Center에서 알림을 받는 것과 같은 경우와 뷰의 수명에 효과의 수명을 묶는 방법입니다.
 
-  Run this application in the simulator, and take a few screenshots by going to \
-  *Device › Screenshot* in the menu, and observe that the UI counts the number of times that \
-  happens.
+  이 애플리케이션을 시뮬레이터에서 실행하고, 메뉴에서 Device › Screenshot으로 가서 몇 번 스크린샷을 찍어보세요. 그리고 UI가 그 횟수를 어떻게 세는지 관찰하세요.
 
-  Then, navigate to another screen and take screenshots there, and observe that this screen does \
-  *not* count those screenshots. The notifications effect is automatically cancelled when leaving \
-  the screen, and restarted when entering the screen.
+  그 다음, 다른 화면으로 넘어가서 거기에서 스크린샷을 찍어보세요. 이 화면에서는 그 스크린샷들을 세지 않는다는 것을 관찰할 수 있습니다. 알림 효과는 화면을 떠날 때 자동으로 취소되고, 화면에 다시 들어올 때 재시작됩니다.
   """
 
 @Reducer
@@ -73,14 +68,14 @@ struct LongLivingEffectsView: View {
         AboutView(readMe: readMe)
       }
 
-      Text("A screenshot of this screen has been taken \(store.screenshotCount) times.")
+      Text("이 화면의 스크린샷이 \(store.screenshotCount)번 촬영되었습니다.")
         .font(.headline)
 
       Section {
         NavigationLink {
           detailView
         } label: {
-          Text("Navigate to another screen")
+          Text("Navigate to 다른 화면")
         }
       }
     }
@@ -91,8 +86,7 @@ struct LongLivingEffectsView: View {
   var detailView: some View {
     Text(
       """
-      Take a screenshot of this screen a few times, and then go back to the previous screen to see \
-      that those screenshots were not counted.
+      이 화면의 스크린샷을 몇 번 찍은 다음 이전 화면으로 돌아가 해당 스크린샷이 카운트되지 않았는지 확인하십시오.
       """
     )
     .padding(.horizontal, 64)

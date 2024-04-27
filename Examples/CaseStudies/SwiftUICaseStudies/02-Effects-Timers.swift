@@ -2,11 +2,9 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This application demonstrates how to work with timers in the Composable Architecture.
+  이 애플리케이션은 Composable Architecture에서 타이머를 다루는 방법을 보여줍니다.
 
-  It makes use of the `.timer` method on clocks, which is a helper provided by the Swift Clocks \
-  library included with this library. The helper provides an `AsyncSequence`-friendly API for \
-  dealing with times in asynchronous code.
+  이는 이 라이브러리에 포함된 Swift Clocks 라이브러리의 .timer 메소드를 사용합니다. 이 헬퍼는 비동기 코드에서 시간을 다루기 위한 AsyncSequence 친화적 API를 제공합니다.
   """
 
 @Reducer

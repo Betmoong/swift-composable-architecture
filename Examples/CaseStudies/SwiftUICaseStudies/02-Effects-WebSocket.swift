@@ -2,11 +2,9 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This application demonstrates how to work with a web socket in the Composable Architecture.
+  이 애플리케이션은 Composable Architecture에서 웹 소켓을 다루는 방법을 보여줍니다.
 
-  A lightweight wrapper is made for `URLSession`'s API for web sockets so that we can send, \
-  receive and ping a socket endpoint. To test, connect to the socket server, and then send a \
-  message. The socket server should immediately reply with the exact message you sent in.
+  URLSession의 웹 소켓 API에 대한 가벼운 래퍼를 만들어 소켓 엔드포인트에 메시지를 보내고, 받고, 핑을 할 수 있습니다. 테스트를 위해 소켓 서버에 연결한 다음 메시지를 보내보세요. 소켓 서버는 보낸 메시지와 동일한 메시지로 즉시 응답해야 합니다.
   """
 
 @Reducer

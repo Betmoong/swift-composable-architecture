@@ -2,14 +2,11 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This screen demonstrates how one can cancel in-flight effects in the Composable Architecture.
+  이 화면은 Composable Architecture에서 실행 중인 효과를 어떻게 취소할 수 있는지 보여줍니다.
 
-  Use the stepper to count to a number, and then tap the "Number fact" button to fetch \
-  a random fact about that number using an API.
+  스테퍼를 사용하여 숫자를 세고, "Number fact" 버튼을 눌러 API를 사용하여 해당 숫자에 대한 임의의 사실을 가져옵니다.
 
-  While the API request is in-flight, you can tap "Cancel" to cancel the effect and prevent \
-  it from feeding data back into the application. Interacting with the stepper while a \
-  request is in-flight will also cancel it.
+  API 요청이 진행 중인 동안 "Cancel"을 탭하면 효과를 취소하고 데이터가 애플리케이션으로 되돌아오는 것을 막을 수 있습니다. 요청이 진행 중일 때 스테퍼를 조작해도 요청이 취소됩니다.
   """
 
 @Reducer

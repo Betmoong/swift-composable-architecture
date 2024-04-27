@@ -2,14 +2,9 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This application demonstrates how to make use of SwiftUI's `refreshable` API in the Composable \
-  Architecture. Use the "-" and "+" buttons to count up and down, and then pull down to request \
-  a fact about that number.
+  이 애플리케이션은 Composable Architecture에서 SwiftUI의 refreshable API를 사용하는 방법을 보여줍니다. "-"와 "+" 버튼을 사용하여 수를 증가시키거나 감소시킨 후, 해당 숫자에 대한 사실을 요청하기 위해 아래로 당겨보세요.
 
-  There is a discardable task that is returned from the store's `.send` method representing any \
-  effects kicked off by the reducer. You can `await` this task using its `.finish` method, which \
-  will suspend while the effects remain in flight. This suspension communicates to SwiftUI that \
-  you are currently fetching data so that it knows to continue showing the loading indicator.
+  리듀서에 의해 시작된 효과를 나타내는 스토어의 .send 메소드에서 반환된 작업은 버릴 수 있습니다. 이 작업을 .finish 메소드를 사용하여 await할 수 있으며, 효과가 남아 있는 동안 일시 중지됩니다. 이 일시 중지는 데이터를 가져오고 있음을 SwiftUI에 알려 로딩 인디케이터가 계속 표시되도록 합니다.
   """
 
 @Reducer
