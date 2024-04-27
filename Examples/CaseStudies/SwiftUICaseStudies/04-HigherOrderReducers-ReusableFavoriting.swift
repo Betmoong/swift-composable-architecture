@@ -2,19 +2,13 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This screen demonstrates how one can create reusable components in the Composable Architecture.
+  이 화면은 Composable Architecture에서 재사용 가능한 구성요소를 만드는 방법을 보여줍니다.
 
-  It introduces the domain, logic, and view around "favoriting" something, which is considerably \
-  complex.
+  이것은 "즐겨찾기"에 대한 도메인, 로직, 그리고 뷰를 소개하며, 상당히 복잡한 것을 포함합니다.
 
-  A feature can give itself the ability to "favorite" part of its state by embedding the domain of \
-  favoriting, using the `Favoriting` reducer, and passing an appropriately scoped store to \
-  `FavoriteButton`.
+  기능은 'Favoriting' 리듀서를 사용하고, 적절하게 스코핑된 스토어를 FavoriteButton에 전달함으로써 자신의 상태의 일부를 "즐겨찾기" 할 수 있는 기능을 제공할 수 있습니다.
 
-  Tapping the favorite button on a row will instantly reflect in the UI and fire off an effect to \
-  do any necessary work, like writing to a database or making an API request. We have simulated a \
-  request that takes 1 second to run and may fail 25% of the time. Failures result in rolling back \
-  favorite state and rendering an alert.
+  행의 즐겨찾기 버튼을 탭하면 UI에 즉시 반영되고 데이터베이스에 쓰기나 API 요청과 같은 필요한 작업을 수행하기 위해 효과가 발생합니다. 우리는 1초 동안 실행되고 25%의 확률로 실패할 수 있는 요청을 시뮬레이션했습니다. 실패는 즐겨찾기 상태를 롤백하고 알림을 표시합니다.
   """
 
 struct FavoritingState<ID: Hashable & Sendable>: Equatable {

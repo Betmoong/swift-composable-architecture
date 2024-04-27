@@ -2,16 +2,11 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This screen demonstrates how one can create reusable components in the Composable Architecture.
+  이 화면은 Composable Architecture에서 재사용 가능한 구성 요소를 만드는 방법을 보여줍니다.
 
-  The "download component" is a component that can be added to any view to enhance it with the \
-  concept of downloading offline content. It facilitates downloading the data, displaying a \
-  progress view while downloading, canceling an active download, and deleting previously \
-  downloaded data.
+  "다운로드 구성 요소"는 오프라인 콘텐츠를 다운로드하는 개념으로 어떤 뷰도 개선할 수 있는 구성 요소입니다. 이 구성 요소는 데이터 다운로드, 다운로드 중 진행 상태 표시, 활성 다운로드 취소, 이전에 다운로드된 데이터 삭제를 용이하게 합니다.
 
-  Tap the download icon to start a download, and tap again to cancel an in-flight download or to \
-  remove a finished download. While a file is downloading you can tap a row to go to another \
-  screen to see that the state is carried over.
+  다운로드 아이콘을 탭하여 다운로드를 시작하고, 다시 탭하여 진행 중인 다운로드를 취소하거나 완료된 다운로드를 제거할 수 있습니다. 파일이 다운로드되는 동안 행을 탭하여 다른 화면으로 이동할 수 있으며, 상태가 유지되는 것을 볼 수 있습니다.
   """
 
 @Reducer

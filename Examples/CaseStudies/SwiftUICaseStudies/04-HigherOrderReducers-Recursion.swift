@@ -2,10 +2,9 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This screen demonstrates how `Reducer` bodies can recursively nest themselves.
+  이 화면은 Reducer 본문이 어떻게 재귀적으로 자신을 중첩할 수 있는지 보여줍니다.
 
-  Tap "Add row" to add a row to the current screen's list. Tap the left-hand side of a row to edit \
-  its name, or tap the right-hand side of a row to navigate to its own associated list of rows.
+  "Add row" 버튼을 탭하면 현재 화면의 목록에 행을 추가합니다. 행의 왼쪽을 탭하여 이름을 편집하거나, 행의 오른쪽을 탭하여 자체 관련 행 목록으로 이동할 수 있습니다.
   """
 
 @Reducer
