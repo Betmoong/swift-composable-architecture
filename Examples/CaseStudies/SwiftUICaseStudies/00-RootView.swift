@@ -8,7 +8,7 @@ struct RootView: View {
     NavigationStack {
       Form {
         Section {
-          NavigationLink("Basics") {
+          NavigationLink("Basics - 카운터") {
             Demo(store: Store(initialState: Counter.State()) { Counter() }) { store in
               CounterDemoView(store: store)
             }

@@ -2,14 +2,12 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This file demonstrates how to handle two-way bindings in the Composable Architecture using \
-  bindable actions and binding reducers.
+  이 파일은 Composable Architecture에서 BindableAction과 BindingReducer를 사용하여 양방향 바인딩을 처리하는 방법을 보여줍니다.
 
-  Bindable actions allow you to safely eliminate the boilerplate caused by needing to have a \
-  unique action for every UI control. Instead, all UI bindings can be consolidated into a single \
-  `binding` action, which the `BindingReducer` can automatically apply to state.
+  바인더블 액션은 모든 UI 컨트롤마다 고유한 액션이 필요하다는 요구로 인해 발생하는 보일러플레이트를 안전하게 제거할 수 있게 해줍니다. \
+  대신, 모든 UI 바인딩은 단일 binding 액션으로 통합될 수 있으며, BindingReducer는 이를 자동으로 상태에 적용할 수 있습니다.
 
-  It is instructive to compare this case study to the "Binding Basics" case study.
+  이 케이스 스터디를 "Binding Basics" 케이스 스터디와 비교하는 것이 교육적입니다.
   """
 
 @Reducer

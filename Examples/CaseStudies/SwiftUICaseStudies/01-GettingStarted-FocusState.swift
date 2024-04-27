@@ -2,9 +2,8 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This demonstrates how to make use of SwiftUI's `@FocusState` in the Composable Architecture with \
-  the library's `bind` view modifier. If you tap the "Sign in" button while a field is empty, the \
-  focus will be changed to the first empty field.
+  이 예제는 Composable Architecture에서 SwiftUI의 @FocusState와 라이브러리의 bind 뷰 수정자를 사용하는 방법을 보여줍니다.
+  "Sign in" 버튼을 누를 때 필드가 비어 있으면 포커스가 첫 번째 비어 있는 필드로 변경됩니다.
   """
 
 @Reducer

@@ -2,21 +2,16 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This screen demonstrates how changes to application state can drive animations. Because the \
-  `Store` processes actions sent to it synchronously you can typically perform animations in the \
-  Composable Architecture just as you would in regular SwiftUI.
+  이 화면은 애플리케이션 상태의 변경이 어떻게 애니메이션을 구동할 수 있는지 보여줍니다. Store는 전송된 액션을 동기적으로 처리하기 때문에, \
+  일반 SwiftUI에서와 마찬가지로 Composable Architecture에서도 애니메이션을 수행할 수 있습니다.
 
-  To animate the changes made to state when an action is sent to the store, you can also pass \
-  along an explicit animation, or you can call `store.send` in a `withAnimation` block.
+  스토어에 액션이 전송될 때 상태 변경을 애니메이션화하려면 명시적인 애니메이션을 전달하거나, withAnimation 블록 안에서 store.send를 호출할 수 있습니다.
 
-  To animate changes made to state through a binding, you can call the `animation` method on \
-  `Binding`.
+  바인딩을 통해 상태 변경을 애니메이션화하려면, Binding에 animation 메소드를 호출할 수 있습니다.
 
-  To animate asynchronous changes made to state via effects, use the `Effect.run` style of \
-  effects, which allows you to send actions with animations.
+  효과를 통해 비동기 상태 변경을 애니메이션화하려면, 애니메이션을 동반한 액션을 전송할 수 있는 Effect.run 스타일의 효과를 사용하세요.
 
-  Try out the demo by tapping or dragging anywhere on the screen to move the dot, and by flipping \
-  the toggle at the bottom of the screen.
+  화면의 어느 곳이든 탭하거나 드래그하여 점을 이동시키고, 화면 하단의 토글을 전환하여 데모를 시도해 보세요.
   """
 
 @Reducer

@@ -2,18 +2,14 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This demonstrates how to best handle alerts and confirmation dialogs in the Composable \
-  Architecture.
+  이 내용은 Composable Architecture에서 알림과 확인 대화 상자를 최적으로 처리하는 방법을 보여줍니다.
 
-  The library comes with two types, `AlertState` and `ConfirmationDialogState`, which are data \
-  descriptions of the state and actions of an alert or dialog. These types can be constructed in \
-  reducers to control whether or not an alert or confirmation dialog is displayed, and \
-  corresponding view modifiers, `alert(_:)` and `confirmationDialog(_:)`, can be handed bindings \
-  to a store focused on an alert or dialog domain so that the alert or dialog can be displayed in \
-  the view.
+  이 라이브러리는 AlertState와 ConfirmationDialogState 두 가지 타입을 제공하는데, 이는 알림이나 대화 상자의 상태와 행동에 대한 데이터 설명입니다. \
+  이러한 타입은 리듀서에서 구성될 수 있어 알림이나 확인 대화 상자가 표시될지 여부를 제어할 수 있으며, \
+  해당하는 뷰 모디파이어 alert(_:)과 confirmationDialog(_:)는 알림이나 대화 상자 도메인에 초점을 맞춘 스토어에 바인딩될 수 있어 \
+  뷰에서 알림이나 대화 상자를 표시할 수 있습니다.
 
-  The benefit of using these types is that you can get full test coverage on how a user interacts \
-  with alerts and dialogs in your application
+  이러한 타입을 사용하는 이점은 사용자가 애플리케이션에서 알림과 대화 상자와 상호작용하는 방법에 대한 완전한 테스트 커버리지를 얻을 수 있다는 것입니다.
   """
 
 @Reducer

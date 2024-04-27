@@ -2,10 +2,10 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This screen demonstrates how to take small features and compose them into bigger ones using \
-  reducer builders and the `Scope` reducer, as well as the `scope` operator on stores.
+  이 화면은 작은 기능을 가져와서 리듀서 빌더와 Scope 리듀서를 사용하여 더 큰 기능으로 구성하는 방법을 보여줍니다. \
+  또한 스토어에 있는 scope 연산자를 사용합니다.
 
-  It reuses the domain of the counter screen and embeds it, twice, in a larger domain.
+  이는 카운터 화면의 도메인을 재사용하고, 그것을 더 큰 도메인에 두 번 포함시킵니다.
   """
 
 @Reducer

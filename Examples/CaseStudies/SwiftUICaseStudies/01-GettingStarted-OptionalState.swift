@@ -2,14 +2,12 @@ import ComposableArchitecture
 import SwiftUI
 
 private let readMe = """
-  This screen demonstrates how to show and hide views based on the presence of some optional child \
-  state.
+  이 화면은 일부 선택적인 자식 상태의 존재 여부에 따라 뷰를 표시하고 숨기는 방법을 보여줍니다.
 
-  The parent state holds a `Counter.State?` value. When it is `nil` we will default to a plain \
-  text view. But when it is non-`nil` we will show a view fragment for a counter that operates on \
-  the non-optional counter state.
+  부모 상태는 `Counter.State?` 값을 가집니다. 이 값이 `nil`일 경우 기본 텍스트 뷰를 표시합니다. \
+  하지만 `nil`이 아닐 경우에는 선택적이지 않은 카운터 상태에서 작동하는 카운터의 뷰 조각을 표시합니다.
 
-  Tapping "Toggle counter state" will flip between the `nil` and non-`nil` counter states.
+  "Toggle counter state"를 탭하면 `nil`과 `nil`이 아닌 카운터 상태 사이를 전환합니다.
   """
 
 @Reducer
